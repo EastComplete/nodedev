@@ -7,7 +7,7 @@ buf =  fs.readFileSync(process.argv[2]);
 
 function ReadFile(var filename)
 {
-	
+
 }
 
 
