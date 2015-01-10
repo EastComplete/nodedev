@@ -17,6 +17,9 @@ function ReadFile( filename)
 
 		console.log (newLineCount);
 
+		console.log("hello");
+
+		
 
 	})
 }
