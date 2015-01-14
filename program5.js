@@ -20,6 +20,7 @@ function ReadDir( path, extension)
 		for ( var i =0; i<files.length ; i++)
 		{
 			console.log(files[i]);
+			//extension??
 			//console.log(path.extname(files[i]));
 
 		}
