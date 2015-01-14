@@ -1,7 +1,8 @@
 
+
+
 var fs = require('fs');
 var  buf = new Buffer(256);
-//buf =  fs.readFileSync(process.argv[2]);
 var str = undefined
 var lines = undefined
 var newLineCount = undefined
@@ -12,6 +13,7 @@ function ReadFile( filename)
 	{
 		str = 	fileContents.toString();
 		lines = str.split('\n');
+
 
 		newLineCount = Number(lines.length) -1;
 
