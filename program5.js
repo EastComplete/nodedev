@@ -1,28 +1,48 @@
 
 var fs = require('fs');
 
-var path = process.argv[2];
+var currentPath = process.argv[2];
 var extension = process.argv[3];
 
+var path = require('path')
+
+//hh
 //console.log(process.argv[2]);
 //console.log(process.argv[3]);
 
+function getExtension(filename) 
+{
+    var ext = path.extname(filename||'').split('.');
+    return ext[ext.length - 1];
+}
 
-
-function ReadDir( path, extension)
+function ReadDir(currentpath, extension)
 {
 	//fs.readFile(filename, function doneReading(err, fileContents)
-	fs.readdir(path,function DoneReading(err, files)
+	fs.readdir(currentpath,function DoneReading(err, files)
 	{
-		console.log(files.length);
-
+		//console.log(files.length);
 
 		for ( var i =0; i<files.length ; i++)
 		{
-			console.log(files[i]);
-			//extension??
-			//console.log(path.extname(files[i]));
+			if (extension == getExtension(files[i]))
+			{
+				console.log(files[i]);
+			}
 
+			//모범답안
+			/*
+				─────────────────────────────────────────────────────────────────────────────
+		    var fs = require('fs')
+		    var path = require('path')
+
+		    fs.readdir(process.argv[2], function (err, list) {
+		      list.forEach(function (file) {
+		        if (path.extname(file) === '.' + process.argv[3])
+		          console.log(file)
+		      })
+
+			*/
 		}
 
 		/*
@@ -39,7 +59,7 @@ function ReadDir( path, extension)
 	})
 }
 
-ReadDir(path, extension);
+ReadDir(currentPath, extension);
 
 
 /* 
