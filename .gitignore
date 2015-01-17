@@ -1,5 +1,4 @@
-*.xml
-*.name
+.idea/*.*
 *.iml
 *.swp
 
