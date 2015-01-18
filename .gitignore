@@ -1,4 +1,5 @@
 .idea/*.*
+.idea/scopes/
 *.iml
 *.swp
 
