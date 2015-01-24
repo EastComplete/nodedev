@@ -1,0 +1,18 @@
+{
+  "name": "nodeschoolio",
+  "version": "1.0.0",
+  "description": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://EastComplete@github.com/EastComplete/nodedev.git"
+  },
+  "author": "youngsu",
+  "license": "mit",
+  "bugs": {
+    "url": "https://github.com/EastComplete/nodedev/issues"
+  },
+  "homepage": "https://github.com/EastComplete/nodedev"
+}
